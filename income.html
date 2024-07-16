@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Доход</title>
+    <link rel="stylesheet" href="income.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="title" id="pageTitle">Доход</div>
+            <div class="rank">Ранг: 1</div>
+            <div class="score" id="scoreValue">100</div>
+        </header>
+        <div class="staking-container">
+            <h2>Заморозка монет</h2>
+            <div>Текущая прибыль: <span id="currentProfit">0</span></div>
+            <input type="number" id="stakingAmount" placeholder="Введите количество монет">
+            <button class="button" id="stakeButton">Заморозить</button>
+        </div>
+        <div id="upgrades" class="upgrade-container">
+            <div class="upgrade-header">
+                <span>Прокачка и бустеры</span>
+            </div>
+            <div class="upgrade">
+                <span>Мульти кликер</span>
+                <button class="upgrade-button" id="multiClickerUpgrade">Прокачать (100)</button>
+            </div>
+            <div class="upgrade">
+                <span>Увеличение запаса</span>
+                <button class="upgrade-button" id="barCapacityUpgrade">Прокачать (200)</button>
+            </div>
+            <div class="upgrade">
+                <span>Макс. Нажатия</span>
+                <button class="upgrade-button" id="boosterMaxProgress">Бустер (300)</button>
+            </div>
+            <div class="upgrade">
+                <span>Увеличение прибыли</span>
+                <button class="upgrade-button" id="boosterClickMultiplier">Бустер (400)</button>
+            </div>
+        </div>
+        <footer>
+            <div class="button-container">
+                <div class="button-wrapper"><button class="button" onclick="navigate('index.html')">Главная</button></div>
+                <div class="button-wrapper"><button class="button" onclick="navigate('income.html')">Доход</button></div>
+                <div class="button-wrapper"><button class="button" onclick="navigate('tasks.html')">Задания</button></div>
+                <div class="button-wrapper"><button class="button" onclick="navigate('referrals.html')">Рефералы</button></div>
+                <div class="button-wrapper"><button class="button" onclick="navigate('wallet.html')">Кошелек</button></div>
+            </div>
+        </footer>
+    </div>
+    <script src="income.js"></script>
+</body>
+</html>

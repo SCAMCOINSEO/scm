@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Стейкинг</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="title" id="pageTitle">Стейкинг</div>
+        </header>
+        <div class="page active" id="stakingPage">
+            <form id="stakingForm">
+                <input type="number" id="stakingInput" placeholder="хуй тебе а не лаве лох">
+                <button type="submit">Отправить</button>
+            </form>
+            <div id="stakingStatus">Ваш текущий стейкинг: хуй</div>
+        </div>
+        <footer>
+            <div class="button-container">
+                <div class="button-wrapper"><button class="button" onclick="navigate('index.html')">Главная</button></div>
+                <div class="button-wrapper"><button class="button" onclick="navigate('income.html')">Стейкинг</button></div>
+                <div class="button-wrapper"><button class="button" onclick="navigate('tasks.html')">Задания</button></div>
+                <div class="button-wrapper"><button class="button" onclick="navigate('referrals.html')">Рефералы</button></div>
+                <div class="button-wrapper"><button class="button" onclick="navigate('wallet.html')">Кошелек</button></div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        function navigate(page) {
+            window.location.href = page;
+        }
+        document.getElementById('stakingForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const stakingInput = document.getElementById('stakingInput').value;
+            const stakingStatus = document.getElementById('stakingStatus');
+
+            stakingStatus.textContent = 'Ваш текущий стейкинг: ' + stakingInput;
+        });
+    </script>
+</body>
+</html>

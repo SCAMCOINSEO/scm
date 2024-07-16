@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2F2F2F;
+    color: #eee;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.rank {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.score {
+    font-size: 4em;
+    color: yellow;
+    margin-top: 10px;
+}
+
+.staking-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.staking-container input {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #444;
+    color: #eee;
+}
+
+.staking-container button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.staking-container button:hover {
+    background-color: #66bb6a;
+}
+
+.upgrade-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.upgrade-header {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #555;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.upgrade {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.upgrade-button {
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.upgrade-button:hover {
+    background-color: #66bb6a;
+}
+
+footer {
+    width: 100%;
+    background-color: #444;
+    padding: 10px 0;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.button-wrapper {
+    margin: 5px;
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #555;
+    color: #eee;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #666;
+}

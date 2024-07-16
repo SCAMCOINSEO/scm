@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="title" id="pageTitle">Главная</div>
+            <div class="rank">Ранг: 1</div>
+            <div class="score" id="scoreValue">100</div>
+            <div class="income" id="incomePerHour">Доход в час: 0</div>
+            <img src="https://cdn-icons-png.flaticon.com/256/4285/4285906.png" alt="Монета" class="coin-icon" id="clickerButton">
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            <div class="progress-status" id="progressStatus">5000/5000</div>
+            <button class="button upgrade-button-main" id="navigateToIncome">Прокачать</button>
+        </header>
+        <footer>
+            <div class="button-container">
+                <div class="button-wrapper"><button class="button" onclick="navigate('index.html')">Главная</button></div>
+                <div class="button-wrapper"><button class="button" onclick="navigate('income.html')">Доход</button></div>
+                <div class="button-wrapper"><button class="button" onclick="navigate('tasks.html')">Задания</button></div>
+                <div class="button-wrapper"><button class="button" onclick="navigate('referrals.html')">Рефералы</button></div>
+                <div class="button-wrapper"><button class="button" onclick="navigate('wallet.html')">Кошелек</button></div>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
