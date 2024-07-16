@@ -297,3 +297,24 @@ footer {
         transform: translateY(-50px);
     }
 }
+
+/* Примерные стили для мобильной версии */
+
+/* Общие стили для мобильной версии */
+@media (max-width: 768px) {
+    /* Примерные стили для футера */
+    footer {
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #444;
+        color: #eee;
+        z-index: 1000; /* Чтобы футер всегда был поверх контента */
+    }
+    
+    /* Дополнительные стили мобильной версии */
+    /* При необходимости */
+}
